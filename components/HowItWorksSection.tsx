@@ -1,7 +1,7 @@
 'use client'
 
-import {useState, useEffect, JSX} from 'react';
-import {motion, useScroll, useTransform} from 'framer-motion';
+import React, {useState, useEffect} from 'react';
+import {motion, useScroll, useTransform, Variants} from 'framer-motion';
 import {useMediaQuery} from "@/hooks/useMediaQuery";
 import {
     Phone,
@@ -17,7 +17,7 @@ import {
 interface Step {
     id: number,
     title: string,
-    icon: JSX.Element,
+    icon: React.ElementType; // או React.ComponentType
     description: string,
     cta: string,
     iconBg: string,
@@ -76,7 +76,7 @@ const HowItWorksSection = () => {
         }
     ];
 
-    const containerVariants = {
+    const containerVariants: Variants  = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
@@ -87,7 +87,7 @@ const HowItWorksSection = () => {
         }
     };
 
-    const stepVariants = {
+    const stepVariants: Variants = {
         hidden: {
             opacity: 0,
             y: 30,
