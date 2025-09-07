@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+    --color-primary: #0353a4;
+    --color-accent: #2B8AF7;
+    --color-accent2: #FF6B35;
+    --color-dark: #0F1724;
+    --color-light: #F8FAFC;
+    --color-text-primary: #111827;
+    --color-text-secondary: #4B5563;
+    --color-cta-hover: #0466c8;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-light);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 0.625rem;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-cta-hover);
+}
+
+.btn-secondary {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    border-radius: 0.625rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.bg-primary { background-color: var(--color-primary); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-accent2 { background-color: var(--color-accent2); }
+.bg-dark { background-color: var(--color-dark); }
+.bg-light { background-color: var(--color-light); }
+
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-accent { color: var(--color-accent); }
+.text-accent2 { color: var(--color-accent2); }
