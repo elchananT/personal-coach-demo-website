@@ -17,7 +17,7 @@ interface FaqData {
 const FAQSection = () => {
     const { scrollY } = useScroll();
     const y = useTransform(scrollY, [9000, 11000], [0, 250]);
-    const [openItem, setOpenItem] = useState(null);
+    const [openItem, setOpenItem] = useState<null | number>(null);
     const isMobile = useMediaQuery("(max-width: 768px)");
 
     const faqData: FaqData[] = [
