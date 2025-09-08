@@ -36,7 +36,7 @@ const HeroSection = () => {
             </div>
 
             <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-                <div className="flex flex-col-reverse md:grid lg:grid-cols-12 gap-8 lg:gap-12 min-h-screen items-center py-20 lg:py-0">
+                <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-8 lg:gap-12 min-h-screen items-center py-20 lg:py-0">
 
                     {/* Left Column - Text Content (55%) */}
                     <motion.div
